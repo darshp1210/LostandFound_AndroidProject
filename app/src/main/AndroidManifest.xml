@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LOSTANDFOUND"
+        tools:targetApi="31">
+        <activity
+            android:name=".search_post"
+            android:exported="false" />
+        <activity
+            android:name=".DeletePost"
+            android:exported="false" />
+        <activity
+            android:name=".EditPost"
+            android:exported="false" />
+        <activity
+            android:name=".Showownposts"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false"
+            android:label="@string/title_activity_update"
+            android:theme="@style/Theme.LOSTANDFOUND.NoActionBar" />
+        <activity
+            android:name=".ViewProfile"
+            android:exported="false"
+            android:label="@string/title_activity_view_profile"
+            android:theme="@style/Theme.LOSTANDFOUND.NoActionBar" />
+        <activity
+            android:name=".Newpost"
+            android:exported="false"
+            android:label="@string/title_activity_newpost"
+            android:theme="@style/Theme.LOSTANDFOUND.NoActionBar" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterUser"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

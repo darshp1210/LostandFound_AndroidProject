@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_postfeeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feed_search"
+            android:layout_width="match_parent"
+            android:layout_height="504dp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="150px" />
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/desc"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="218dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Item Description:"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20dp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/Item_Description"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="fuyjg"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20dp"></TextView>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/type"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/desc"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Item Type:     "-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20dp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/Item_type"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="yig"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20dp"></TextView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/contact"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/type"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Contact Information:    "-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20dp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/Contact_Info"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="utfdfgy"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20dp"></TextView>-->
+
+<!--        </LinearLayout>-->
+
+
+
+
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

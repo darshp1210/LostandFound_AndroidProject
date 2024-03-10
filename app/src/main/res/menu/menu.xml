@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionsearch"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"
+        app:itemTextColor="@color/white"/>
+
+    <item
+        android:id="@+id/actionCancel"
+        android:title="Search"
+        android:visible="false"
+        app:itemTextColor="@color/white"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+
+</menu>

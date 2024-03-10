@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="286dp"
+        android:layout_height="158dp"
+        app:srcCompat="@drawable/img"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="UTA Lost and Found "
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+
+    <Button
+        android:id="@+id/newPost"
+        android:layout_width="115dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/banner"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginTop="455dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:onClick="NewPost"
+        android:text="New post"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="115dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/banner"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="455dp"
+        android:layout_toRightOf="@+id/newPost"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Profile"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="159dp"
+        android:id="@+id/post_Feed">
+
+        <SearchView
+            android:id="@+id/searchinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="#30ffffff"
+            android:iconifiedByDefault="false"
+
+            android:queryHint="Search Here"
+            android:text="Search" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/post_feeds"
+            android:layout_width="match_parent"
+            android:layout_height="507dp"
+            android:layout_below="@+id/searchinfo"
+            android:layout_marginTop="10dp" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="416dp"
+            android:layout_marginTop="400px"
+            android:gravity="center_horizontal" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="122dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/banner"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="455dp"
+        android:layout_toRightOf="@+id/profile"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:onClick="logout"
+        android:text="Logout"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="680dp" />
+
+
+</RelativeLayout>
